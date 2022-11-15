@@ -24,10 +24,10 @@ jobs:
         enable_cache: true
 
     - name: 📂 Sync Files
-    uses: SamKirkland/FTP-Deploy-Action@4.3.2
-    with:
-      server: ${{ secrets.FTP_SERVER }}
-      username: ${{ secrets.FTP_USER }}
-      password: ${{ secrets.FTP_PASS }}
-      local-dir: _site
-      server-dir: ${ GITHUB_REPOSITORY }
+      uses: SamKirkland/FTP-Deploy-Action@4.3.2
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASS }}
+        local-dir: _site
+        server-dir: ${ GITHUB_REPOSITORY }
