@@ -21,6 +21,7 @@ jobs:
     - name: 🔨 Install Dependencies & Build Site
       uses: limjh16/jekyll-action-ts@v2
       with:
+        baseurl: https://sites.markhope.ml
         enable_cache: true
 
     - name: 📂 Sync Files
