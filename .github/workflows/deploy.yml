@@ -19,7 +19,7 @@ jobs:
         ruby-version: 2.7
 
     - name: 🔨 Install Dependencies & Build Site
-      uses: limjh16/jekyll-action-ts@v2
+      uses: helaili/jekyll-action@v2
       with:
         jekyll_build_options: "--baseurl /${{ github.repository }}"
         enable_cache: true
