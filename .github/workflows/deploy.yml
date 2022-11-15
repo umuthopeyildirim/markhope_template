@@ -23,7 +23,6 @@ jobs:
       with:
         jekyll_build_options: "--baseurl /${{ github.repository }}"
         build_only: true
-        build_dir: 
 
     - name: 📂 Sync Files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
@@ -31,5 +30,5 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASS }}
-        local-dir: /github/jekyll_build
+        local-dir: /github/jekyll_build/
         server-dir: ${{ github.repository }}/
