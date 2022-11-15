@@ -26,7 +26,7 @@ jobs:
         ruby-version: 2.7
 
     - name: 🔨 Install Dependencies & Build Site
-      uses: helaili/jekyll-action@v2.4.0
+      uses: helaili/jekyll-action@2.4.0
       with:
         jekyll_build_options: "--baseurl /${{ github.repository }}"
         build_only: true
