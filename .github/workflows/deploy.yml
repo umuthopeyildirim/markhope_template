@@ -50,4 +50,4 @@ jobs:
         curl -m 70 -X POST https://us-central1-portfolio-umut-yildirim.cloudfunctions.net/screenshot \ 
         -H "Authorization: Bearer ${{ secrets.GOOGLE_FUNCTIONS_TOKEN }}" \ 
         -H "Content-Type: application/json" \ 
-        -d '{"name":"${{ github.repository }}", "url": "${{ github.repository }}"}'
+        -d '{"name":"${{ github.repository }}", "url": "https://sites.markhope.ml/${{ github.repository }}"}'
