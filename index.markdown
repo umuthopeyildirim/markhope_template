@@ -5,4 +5,5 @@
 layout: home
 ---
 
-# Ian Rules the World
+# Markhope - Markdown to HTML converter
+Your website is now up you can edit it however you want. You can use markdown to write your content. You can also use HTML if you want to.
